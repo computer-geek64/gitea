@@ -7,7 +7,7 @@ services:
     restart: unless-stopped
     environment:
       GITEA__database__DB_TYPE: postgres
-      GITEA__database__DB_HOST: postgres
+      GITEA__database__HOST: postgres
       GITEA__database__NAME: gitea
       GITEA__database__USER: gitea
     env_file: .env
