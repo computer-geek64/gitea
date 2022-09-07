@@ -2,7 +2,7 @@
 # Ensure .env is populated with a database password
 services:
   gitea:
-    container_name: gitea
+    container_name: gitea-gitea
     image: gitea/gitea
     restart: unless-stopped
     environment:
@@ -24,7 +24,7 @@ services:
     ports:
       - "127.0.0.1:8086:3000"
   postgres:
-    container_name: postgres
+    container_name: gitea-postgres
     image: postgres
     restart: unless-stopped
     environment:
